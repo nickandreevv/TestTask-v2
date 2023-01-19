@@ -1,0 +1,108 @@
+.container {
+  position: relative;
+  background-color: white;
+  color: #000;
+  border: 5px solid #1698d9;
+  border-radius: 10px 10px 10px 10px;
+  max-width: 310px;
+  max-height: 450px;
+  overflow: hidden;
+  margin: 0 20px 0 0;
+}
+.container::before {
+  content: '';
+  position: absolute;
+  width: calc(100% - 1px);
+  right: 0;
+  z-index: 0;
+  height: 15%;
+  top: 0px;
+  border-style: solid;
+  border-color: #1698d9;
+  border-width: 0px 0 0px 3px;
+  transform: skew(-45deg);
+  transform-origin: left bottom;
+}
+
+.container:hover {
+  border: 5px solid #2ea8e6;
+}
+
+.active {
+  border: 5px solid #d91667;
+}
+.active:hover {
+  border: 5px solid #e52e7a;
+}
+
+.disabled {
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+.image {
+  display: flex;
+}
+
+.cat {
+  margin: 37px 0px 0px -17px;
+  max-width: 340px;
+}
+.text {
+  text-align: center;
+  color: #666666;
+}
+.title {
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+}
+.food {
+  margin: 0 0 0 47px;
+}
+.portion {
+  margin: 0 0 0 47px;
+}
+.present {
+  margin: 0 0 0 47px;
+}
+.weight {
+  background-color: #1698d9;
+  font-size: 29px;
+  color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  text-align: center;
+  margin: 175px 0px 0px 200px;
+  position: absolute;
+}
+.checkedWeight {
+  background-color: #d91667;
+  font-size: 29px;
+  color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  text-align: center;
+  margin: 175px 0px 0px 200px;
+  position: absolute;
+}
+.catText {
+  color: white;
+  text-align: center;
+}
+
+.heads {
+  color: white;
+}
+.disabledText {
+  color: #ffff66;
+  text-align: center;
+}
+.firstText {
+  text-align: center;
+  color: #d91667;
+  margin: 13px 75px 18px 0px;
+}
